@@ -8,18 +8,18 @@ The healthcare professional search page is meant for the public to readily locat
 Being a pharmacist myself, it was natural to first test things out on the Pharmacists dataset.
 
 ### Methods
-I wrote the web scraping automation script with Python and Selenium. 
+I wrote the web scraping automation script with Python and Selenium.  
 
-Selenium allows you to define tests and automatically detect results of these tests on a pre-decided browser (I used ChromeDriver of Chromium). The Google Chrome we are familiar with is actually built on Chromium. For more info, do check this article out: https://www.howtogeek.com/202825/what%E2%80%99s-the-difference-between-chromium-and-chrome
+Selenium allows you to define tests and automatically detect results of these tests on a pre-decided browser (I used ChromeDriver of Chromium). The Google Chrome we are familiar with is actually built on Chromium. For more info, do check this article out: https://www.howtogeek.com/202825/what%E2%80%99s-the-difference-between-chromium-and-chrome  
 
-Before downloading the Chromium ChromeDriver, do check your Chrome version here: https://www.whatismybrowser.com/detect/what-version-of-chrome-do-i-have
+Before downloading the Chromium ChromeDriver, do check your Chrome version here: https://www.whatismybrowser.com/detect/what-version-of-chrome-do-i-have  
 Once done, proceed over to this link to download the corresponding ChromeDriver version for your Chrome: https://chromedriver.chromium.org/downloads
 
-A host of Selenium functions allows for step-by-step interactions with a webpage and assess the response of a browser to various changes. This is exceptionally useful since the MOH website can be tricky to navigate if we are to scrape the contents.
+A host of Selenium functions allows for step-by-step interactions with a webpage and assess the response of a browser to various changes. This is exceptionally useful since the MOH website can be tricky to navigate if we are to scrape the contents.  
 
-The details of my experimentation and implementation are described in the Jupyter notebook. 
+The details of my experimentation and implementation are described in the Jupyter notebook.   
 
-To run the script directly, you can use the .py file
+To run the script directly, you can use the .py file  
 
 ### Challenges and Solutions
 There are multiple challenges to tackle when scrapping from the MOH website. As a result of this, the Python script had to undergo multiple iterations of adjustments in order to get the web scrapping process done right. The script has been written in a way to overcome these following challenges:
@@ -36,4 +36,4 @@ There are multiple challenges to tackle when scrapping from the MOH website. As 
  
  
 ### Comments
-Please do let me know your feedback about this repo. I do believe there are still some kinks to resolve, since I still do get thrown an Exception every now and then. Also, feel free to tell me how I can better improve the script, as well as the information listed in this README. Thanks!
+Please do let me know your feedback about this repo. I do believe there are still some kinks to resolve, since I still do get thrown an Exception (e.g. stale element reference: element is not attached to the page document) every now and then. Also, feel free to tell me how I can better improve the script, as well as the information listed in this README. Thanks!
