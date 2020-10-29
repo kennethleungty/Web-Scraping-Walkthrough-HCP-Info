@@ -10,7 +10,9 @@ Being a pharmacist myself, it was natural to first test things out on the Pharma
 ### Methods
 I wrote the web scraping automation script with Python and Selenium. 
 
-Selenium allows you to define tests and automatically detect results of these tests on a pre-decided browser (I used Chromium and the accompanying Web Driver). The Google Chrome we are familiar with is actually built on Chromium. For more info, do check this article out: https://www.howtogeek.com/202825/what%E2%80%99s-the-difference-between-chromium-and-chrome
+Selenium allows you to define tests and automatically detect results of these tests on a pre-decided browser (I used ChromeDriver of Chromium). The Google Chrome we are familiar with is actually built on Chromium. For more info, do check this article out: https://www.howtogeek.com/202825/what%E2%80%99s-the-difference-between-chromium-and-chrome
+
+Download the right Chromium ChromeDriver for your system over here: https://chromedriver.chromium.org/downloads
 
 A host of Selenium functions allows for step-by-step interactions with a webpage and assess the response of a browser to various changes. This is exceptionally useful since the MOH website can be tricky to navigate if we are to scrape the contents.
 
