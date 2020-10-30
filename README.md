@@ -1,12 +1,13 @@
 # Web Scrapper - Healthcare Professionals in Singapore
 
-### Introduction
+## Motivation
 I felt it would be interesting to explore the full list of licensed healthcare professionals in Singapore, and also fun to practise my web scrapping chops. To gather this dataset in the first place, I had to perform web scrapping on the Ministry of Health (MOH) Healthcare Professionals page to retrieve this publicly available information. This is because the entire list is not readily available for download in its entirety. 
 
 The healthcare professional search page is meant for the public to readily locate healthcare professionals in Singapore, and this includes doctors, nurses, pharmacists, dentists, and other practitioners.
 
 Being a pharmacist myself, it was natural to first test things out on the Pharmacists dataset.
 
+___
 ### Methods
 I wrote the web scraping automation script with Python and Selenium.  
 
@@ -21,6 +22,7 @@ The details of my experimentation and implementation are described in the Jupyte
 
 To run the script directly, you can use the .py file  
 
+___
 ### Challenges and Solutions
 There are multiple challenges to tackle when scrapping from the MOH website. As a result of this, the Python script had to undergo multiple iterations of adjustments in order to get the web scrapping process done right. The script has been written in a way to overcome these following challenges:
 
@@ -34,6 +36,6 @@ There are multiple challenges to tackle when scrapping from the MOH website. As 
 
  - It will take a ridiculously long amount of time to reach the last result page if we were to start loading from page 1 of the Search Results all the way to the last page. Fortunately there is a 'Last' button that brings you all the way to the final page of the results. With that, the script was written such that for result pages that are more than the half way mark (i.e. pages 101 to 200 from a total of 200 search results pages), the program will go to the last page, and then work backwards in reverse to do the scraping.
  
- 
+___
 ### Comments
 Please do let me know your feedback about this repo. I do believe there are still some kinks to resolve, since I still do get thrown an Exception (e.g. stale element reference: element is not attached to the page document) every now and then. Also, feel free to tell me how I can better improve the script, as well as the information listed in this README. Thanks!
