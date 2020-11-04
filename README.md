@@ -1,7 +1,7 @@
-# Web Scrapper - Healthcare Professionals in Singapore
+# Web Scrapping Healthcare Professionals' Information
 
 ## Motivation
-I felt it would be interesting to explore the full list of licensed healthcare professionals in Singapore, and also fun to practise my web scrapping chops. To gather this dataset in the first place, I had to perform web scrapping on the Ministry of Health (MOH) Healthcare Professionals page to retrieve this publicly available information. This is because the entire list is not readily available for download in its entirety. 
+I felt it would be interesting to explore the lists of registered healthcare professionals in Singapore, and also fun to practise my web scrapping chops. To gather this dataset in the first place, I had to perform web scrapping on the Ministry of Health (MOH) Healthcare Professionals page to retrieve this publicly available information. This is because the entire list is not readily available for download in its entirety. 
 
 The healthcare professional search page is meant for the public to readily locate healthcare professionals in Singapore, and this includes doctors, nurses, pharmacists, dentists, and other practitioners.
 
