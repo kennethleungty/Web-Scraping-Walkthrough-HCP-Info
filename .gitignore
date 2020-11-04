@@ -7,6 +7,7 @@ __pycache__/
 *.so
 
 # Data files
+*.csv
 *.xlsx
 
 # Distribution / packaging
