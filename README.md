@@ -1,5 +1,7 @@
 # Web Scrapping Healthcare Professionals' Information
 
+Link to notebook: https://nbviewer.jupyter.org/github/kennethleungty/Web-Scrapper/blob/main/Web-Scrapping-Notebook.ipynb
+
 ## Motivation
 I felt it would be interesting to explore the lists of registered healthcare professionals in Singapore, and also fun to practise my web scrapping chops. To gather this dataset in the first place, I had to perform web scrapping on the Ministry of Health (MOH) Healthcare Professionals page to retrieve this publicly available information. This is because the entire list is not readily available for download in its entirety. 
 
