@@ -1,6 +1,8 @@
-# Web Scrapping Healthcare Professionals' Information
+# Web Scrapping Walkthrough - Curating Healthcare Professionals' Information with Python and Selenium
 
-Link to notebook: https://nbviewer.jupyter.org/github/kennethleungty/Web-Scrapper/blob/main/Web-Scrapping-Notebook.ipynb
+Link to notebook: https://nbviewer.jupyter.org/github/kennethleungty/Web-Scrapper/blob/main/Web-Scrapping-Notebook-Full.ipynb
+
+Link to Medium post: Coming soon
 
 ## Motivation
 There is no analytics without data, and web scraping is one of the many tools used to curate data. The concept of web scraping has always been fascinating to me, and I felt it would be certainly be interesting to practise my coding chops while exploring the lists of registered healthcare professionals in Singapore. 
@@ -13,20 +15,15 @@ ___
 ### Methods
 I wrote the web scraping automation script with Python and Selenium.  
 
-Selenium allows you to define tests and automatically detect results of these tests on a pre-decided browser (I used ChromeDriver of Chromium). The Google Chrome we are familiar with is actually built on Chromium. For more info, do check this article out: https://www.howtogeek.com/202825/what%E2%80%99s-the-difference-between-chromium-and-chrome  
+The details of my experimentation and implementation are described in the notebook Web-Scrapping-Notebook-Full.ipynb. The clean version (without the details and commentary) can be found in Web-Scrapping-Notebook-Clean.ipynb
 
-Before downloading the Chromium ChromeDriver, do check your Chrome version here: https://www.whatismybrowser.com/detect/what-version-of-chrome-do-i-have  
-Once done, proceed over to this link to download the corresponding ChromeDriver version for your Chrome: https://chromedriver.chromium.org/downloads
-
-The details of my experimentation and implementation are described in the Jupyter notebook.   
-
-To run the script directly, you can use the .py file  
+To run the script directly, you can use the Web-Scrapping-Script.py file  
 
 ___
 ### Challenges and Solutions
 There are multiple challenges to tackle when scrapping from the MOH website. As a result of this, the Python script had to undergo multiple iterations of adjustments in order to get the web scrapping process done right. The script has been written in a way to overcome these following challenges:
 
- - As with all web scraping projects, one of the initial challenges is to understand the HTML/JS structure of the website and discover which elements to click or explore. Upon digging deeper, the first step was to get the webdriver to switch to the Frame labelled as 'msg_main'. After that, it was necessary to click Search (without any input for the search bars of 'Name' or 'Name of Place of Practice' to get all records loaded.
+ - As with all web scraping projects, one of the initial challenges is to understand the HTML structure of the website and discover which elements to click or explore. Upon digging deeper, the first step was to get the webdriver to switch to the Frame labelled as 'msg_main'. After that, it was necessary to click Search (without any input for the search bars of 'Name' or 'Name of Place of Practice' to get all records loaded.
  
  - Page loads can be slow, resulting in elements on page not being detected and causing exception to be thrown. It was thus important to place waits (with WebDriverWait, implicit waits and time.sleep) at strategic points to ensure that the loading and scraping process is performed in sequence.
 
@@ -38,4 +35,6 @@ There are multiple challenges to tackle when scrapping from the MOH website. As 
  
 ___
 ### Comments
-Please do let me know your feedback about this repo. I do believe there are still some kinks to resolve, since I still do get thrown an Exception (e.g. stale element reference: element is not attached to the page document) every now and then. Also, feel free to tell me how I can better improve the script, as well as the information listed in this README. Thanks!
+Please do let me know your feedback about this repo. I do believe there are still some kinks to resolve, since I still do get thrown an Exception (e.g. stale element reference: element is not attached to the page document) every now and then, despite the strategic placements of wait times.
+
+Please also feel free to share with me ideas to improve the script and details listed in the notebooks. Thanks!
