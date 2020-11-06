@@ -3,11 +3,11 @@
 Link to notebook: https://nbviewer.jupyter.org/github/kennethleungty/Web-Scrapper/blob/main/Web-Scrapping-Notebook.ipynb
 
 ## Motivation
-I felt it would be interesting to explore the lists of registered healthcare professionals in Singapore, and also fun to practise my web scrapping chops. To gather this dataset in the first place, I had to perform web scrapping on the Ministry of Health (MOH) Healthcare Professionals page to retrieve this publicly available information. This is because the entire list is not readily available for download in its entirety. 
+There is no analytics without data, and web scraping is one of the many tools used to curate data. The concept of web scraping has always been fascinating to me, and I felt it would be certainly be interesting to practise my coding chops while exploring the lists of registered healthcare professionals in Singapore. 
 
-The healthcare professional search page is meant for the public to readily locate healthcare professionals in Singapore, and this includes doctors, nurses, pharmacists, dentists, and other practitioners.
+The Ministry of Health (MOH) Professional Registration System webpage grants public access to the general information of healthcare professionals registered in Singapore, allowing the public to readily locate the professional they seek to find. As with most search sites, the records in the system is not available for viewing in its entirety, and that sets up a nice exercise for web scraping practice.
 
-Being a pharmacist myself, it was natural to first test things out on the Pharmacists dataset.
+There are different pages for the various categories of healthcare practitioners (e.g. doctors, pharmacists, nurses, dentists etc), and being a pharmacist myself, it was natural for me to first test things out on the Pharmacists dataset.  
 
 ___
 ### Methods
@@ -17,8 +17,6 @@ Selenium allows you to define tests and automatically detect results of these te
 
 Before downloading the Chromium ChromeDriver, do check your Chrome version here: https://www.whatismybrowser.com/detect/what-version-of-chrome-do-i-have  
 Once done, proceed over to this link to download the corresponding ChromeDriver version for your Chrome: https://chromedriver.chromium.org/downloads
-
-A host of Selenium functions allows for step-by-step interactions with a webpage and assess the response of a browser to various changes. This is exceptionally useful since the MOH website can be tricky to navigate if we are to scrape the contents.  
 
 The details of my experimentation and implementation are described in the Jupyter notebook.   
 
