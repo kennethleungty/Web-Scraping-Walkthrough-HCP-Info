@@ -7,7 +7,7 @@ Link to Medium post: https://kennethleungty.medium.com/web-scrapping-healthcare-
 ## Motivation
 There is no analytics without data, and web scraping is one of the many tools used to curate data. The concept of web scraping has always been fascinating to me, and I felt it would be certainly be interesting to practise my coding chops while exploring the lists of registered healthcare professionals in Singapore. 
 
-The Ministry of Health (MOH) Professional Registration System webpage grants public access to the general information of healthcare professionals registered in Singapore, allowing the public to readily locate the professional they seek to find. As with most search sites, the records in the system is not available for viewing in its entirety, and that sets up a nice exercise for web scraping practice.
+The Ministry of Health Professional Registration System webpage grants public access to the general information of healthcare professionals registered in Singapore, allowing the public to readily locate the professional they seek to find. As with most search sites, the records in the system is not available for viewing in its entirety, and that sets up a nice exercise for web scraping practice.
 
 There are different pages for the various categories of healthcare practitioners (e.g. doctors, pharmacists, nurses, dentists etc), and being a pharmacist myself, it was natural for me to first test things out on the Pharmacists dataset.  
 
@@ -21,7 +21,7 @@ To run the script directly, you can use the Web-Scrapping-Script.py file
 
 ___
 ### Challenges and Solutions
-There are multiple challenges to tackle when scrapping from the MOH website. As a result of this, the Python script had to undergo multiple iterations of adjustments in order to get the web scrapping process done right. The script has been written in a way to overcome these following challenges:
+There are multiple challenges to tackle in the process. As a result of this, the Python script had to undergo multiple iterations of adjustments in order to get the web scrapping process done right. The script has been written in a way to overcome these following challenges:
 
  - As with all web scraping projects, one of the initial challenges is to understand the HTML structure of the website and discover which elements to click or explore. Upon digging deeper, the first step was to get the webdriver to switch to the Frame labelled as 'msg_main'. After that, it was necessary to click Search (without any input for the search bars of 'Name' or 'Name of Place of Practice' to get all records loaded.
  
