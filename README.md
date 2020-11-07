@@ -2,7 +2,7 @@
 
 Link to notebook: https://nbviewer.jupyter.org/github/kennethleungty/Web-Scrapper/blob/main/Web-Scrapping-Notebook-Full.ipynb
 
-Link to Medium post: Coming soon
+Link to Medium post: https://kennethleungty.medium.com/web-scrapping-healthcare-professionals-information-1372385d639d
 
 ## Motivation
 There is no analytics without data, and web scraping is one of the many tools used to curate data. The concept of web scraping has always been fascinating to me, and I felt it would be certainly be interesting to practise my coding chops while exploring the lists of registered healthcare professionals in Singapore. 
